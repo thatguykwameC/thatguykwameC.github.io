@@ -1,7 +1,14 @@
 document.addEventListener('DOMContentLoaded', () => {
   const navLinks = document.querySelectorAll('nav ul li a');
+  const menuToggle = document.getElementById('menu-toggle');
+  const navUl = document.getElementById('nav-links');
+
   navLinks.forEach((link) => {
     link.addEventListener('click', smoothScroll);
+  });
+
+  menuToggle.addEventListener('click', () => {
+    navUl.classList.toggle('show');
   });
 
   const lazyImages = document.querySelectorAll("img[loading='lazy']");

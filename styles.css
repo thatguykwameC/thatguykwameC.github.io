@@ -39,6 +39,10 @@ header h1 {
   text-shadow: 3px 3px 30px #727272;
 }
 
+header nav {
+  position: relative;
+}
+
 header nav ul {
   list-style: none;
   display: flex;
@@ -58,15 +62,36 @@ header nav a:hover {
   color: #ddd;
 }
 
-/* Responsive Header */
+.menu-toggle {
+  display: none;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+
 @media (max-width: 768px) {
-  header .container {
-    flex-direction: column;
-    text-align: center;
+  .menu-toggle {
+    display: block;
   }
 
   header nav ul {
     flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: #004d4d;
+    display: none;
+  }
+
+  header nav ul.show {
+    display: flex;
+  }
+
+  header nav ul li {
+    text-align: center;
   }
 }
 
@@ -114,7 +139,6 @@ h2 {
   margin: 1rem 0;
 }
 
-/* Responsive Main Page */
 @media (min-width: 768px) {
   .main-page {
     flex-direction: row;
@@ -145,7 +169,8 @@ h2 {
 }
 
 .project-btn {
-  width: 27%;
+  width: 100%; /* Adjust the width to fit the container */
+  max-width: 300px;
 }
 
 .project-btn:hover,
@@ -153,7 +178,6 @@ h2 {
   background-color: #003333;
 }
 
-/* Section Styles */
 section {
   padding: 4rem 1rem;
 }
