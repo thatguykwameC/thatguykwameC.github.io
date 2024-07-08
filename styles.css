@@ -80,11 +80,10 @@ header nav a:hover {
     flex-direction: column;
     position: absolute;
     top: 100%;
-    left: 0;
-    right: 0;
+    left: 20%;
+    right: 20%;
     background: #004d4d;
     display: none;
-    width: 0%; /* Set width to 100% */
     padding: 2rem 0;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   }
