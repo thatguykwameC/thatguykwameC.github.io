@@ -84,7 +84,7 @@ header nav a:hover {
     right: 0;
     background: #004d4d;
     display: none;
-    padding: 2rem 0; /* Increased padding */
+    padding: 2rem 1rem;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   }
 
@@ -94,7 +94,7 @@ header nav a:hover {
 
   header nav ul li {
     text-align: center;
-    padding: 1rem 0; /* Increased padding */
+    padding: 1rem 0;
   }
 }
 
@@ -172,7 +172,7 @@ h2 {
 }
 
 .project-btn {
-  width: 100%; /* Adjust the width to fit the container */
+  width: 100%;
   max-width: 300px;
 }
 
