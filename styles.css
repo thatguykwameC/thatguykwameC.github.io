@@ -1,3 +1,6 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
 /* Base Styles */
 * {
   box-sizing: border-box;
@@ -75,28 +78,51 @@ header nav a:hover {
   .menu-toggle {
     display: block;
   }
+}
 
-  header nav ul {
-    flex-direction: column;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    right: 0;
-    background: #004d4d;
-    display: none;
-    width: 30%; /* Set width to 100% */
-    padding: 2rem 0;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-  }
+/* Overlay Navigation Styles */
+.nav-overlay {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 77, 77, 0.95);
+  z-index: 1000;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
 
-  header nav ul.show {
-    display: flex;
-  }
+.nav-overlay ul {
+  list-style: none;
+  text-align: center;
+}
 
-  header nav ul li {
-    text-align: center;
-    padding: 1rem 0;
-  }
+.nav-overlay ul li {
+  padding: 1rem 0;
+}
+
+.nav-overlay ul li a {
+  color: #fff;
+  font-size: 2rem;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.nav-overlay ul li a:hover {
+  color: #ddd;
+}
+
+.close-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
 }
 
 /* Heading Styles */
@@ -173,7 +199,7 @@ h2 {
 }
 
 .project-btn {
-  width: 100%; /* Adjust the width to fit the container */
+  width: 100%;
   max-width: 300px;
 }
 
