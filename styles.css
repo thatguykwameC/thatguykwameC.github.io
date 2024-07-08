@@ -84,7 +84,7 @@ header nav a:hover {
     right: 0;
     background: #004d4d;
     display: none;
-    padding: 1rem 0;
+    padding: 2rem 0; /* Increased padding */
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   }
 
@@ -94,7 +94,7 @@ header nav a:hover {
 
   header nav ul li {
     text-align: center;
-    padding: 0.5rem 0;
+    padding: 1rem 0; /* Increased padding */
   }
 }
 
