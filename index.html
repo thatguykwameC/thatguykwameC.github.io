@@ -8,6 +8,10 @@
     <link rel="stylesheet" href="styles.css" />
     <link rel="icon" href="images/NextCorp_favicon.png" type="image/x-icon" />
     <title>NextCorp</title>
+    <!-- Import nunito sans font family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet" />
   </head>
   <body>
     <header>
@@ -15,6 +19,11 @@
         <h1>NextCorp</h1>
         <nav>
           <button class="menu-toggle" id="menu-toggle">&#9776;</button>
+          <ul id="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
         </nav>
       </div>
     </header>
@@ -58,8 +67,7 @@
           <p class="about-description">
             NextCorp is dedicated to providing the best solutions for how small corporations manage their employees' data. Our all-in-one employee management system is designed to streamline HR
             processes, making it easier for organizations to handle employee information efficiently. This project was inspired by how organizations especially small still used manual attendance
-            systems. We then asked ourselves
-            <strong><em>"How about creating a smart, automated checker system for employee attendance?"</em></strong>
+            systems. We then asked ourselves <strong><em>"How about creating a smart, automated checker system for employee attendance?"</em></strong>
             The simplicity and potential impact of the idea immediately resonated with all of us. We then realized this could solve a common problem in many businesses.
           </p>
         </div>
@@ -105,17 +113,6 @@
         <p>Copyright &copy; NextCorp 2024</p>
       </div>
     </footer>
-
-    <!-- Overlay Navigation -->
-    <div id="nav-overlay" class="nav-overlay">
-      <button class="close-btn" id="close-btn">&times;</button>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#features">Features</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </div>
-
     <script src="script.js"></script>
   </body>
 </html>

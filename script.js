@@ -1,19 +1,14 @@
 document.addEventListener('DOMContentLoaded', () => {
   const navLinks = document.querySelectorAll('nav ul li a');
   const menuToggle = document.getElementById('menu-toggle');
-  const closeBtn = document.getElementById('close-btn');
-  const navOverlay = document.getElementById('nav-overlay');
-
-  menuToggle.addEventListener('click', () => {
-    navOverlay.style.display = 'flex';
-  });
-
-  closeBtn.addEventListener('click', () => {
-    navOverlay.style.display = 'none';
-  });
+  const navUl = document.getElementById('nav-links');
 
   navLinks.forEach((link) => {
     link.addEventListener('click', smoothScroll);
+  });
+
+  menuToggle.addEventListener('click', () => {
+    navUl.classList.toggle('show');
   });
 
   const lazyImages = document.querySelectorAll("img[loading='lazy']");
@@ -38,7 +33,4 @@ function smoothScroll(event) {
     top: targetSection.offsetTop - document.querySelector('header').offsetHeight,
     behavior: 'smooth',
   });
-
-  // Close the nav overlay after clicking a link
-  document.getElementById('nav-overlay').style.display = 'none';
 }
